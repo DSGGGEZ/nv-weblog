@@ -8,11 +8,4 @@ module.exports = (sequelize, DataTypes) => {
   })
 
   return User
-},
-User.prototype.comparePassword = function (password) {
-  if (password == this.password) {
-  return true
-  }
-  return false
- }
- User.associate = function (models) {}
+}

@@ -5,31 +5,15 @@ const UserAuthenController = require('./controllers/UserAuthenController')
 module.exports = (app) => {
   /* RESFUL Api for users management */
   // create user
-  app.post('/user',
-    UserController.create
-  )
-
+  app.post('/user',UserController.create)
   // edit user, suspend, active
-  app.put('/user/:userId',
-    UserController.put
-  )
-
+  app.put('/user/:userId',UserController.put)
   // delete user
-  app.delete('/user/:userId',
-    UserController.remove
-  )
-
+  app.delete('/user/:userId',UserController.remove)
   // get user by id
-  app.get('/user/:userId',
-    UserController.show
-  )
-
+  app.get('/user/:userId',UserController.show)
   // get all user
-  app.get('/users',
-    UserController.index
-  )
-
-  app.post('/login',
-    UserAuthenController.login
-  )
+  app.get('/users',UserController.index)
+  //login
+  app.post('/login',UserAuthenController.login)
 }

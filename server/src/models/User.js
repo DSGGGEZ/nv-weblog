@@ -13,5 +13,5 @@ module.exports = (sequelize, DataTypes) => {
     return false
   }
   User.associate = function (models) { }
-  return User
+  return User;
 }

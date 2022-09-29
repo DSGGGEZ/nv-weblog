@@ -10,6 +10,6 @@ module.exports = {
     },    
   },
   authentication: {
-    jwtSecret: "test"
+      jwtSecret: "nodemon vuejs"
   }
 }

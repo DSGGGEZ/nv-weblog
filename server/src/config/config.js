@@ -10,6 +10,6 @@ module.exports = {
     },    
   },
   authentication: {
-    jstSecret: "test"
+    jwtSecret: "test"
   }
 }
